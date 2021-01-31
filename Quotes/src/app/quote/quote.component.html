@@ -7,12 +7,20 @@
         <div *ngFor='let quote of quotes;let i = index'>
           <div>
             <h6 id={{i}} appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h6>
+            
             <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+            
           </div>
   
-          <div *ngIf='goal.showDescription'>
+          <div *ngIf='quote.showDescription'>
             <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
           </div>
+          <div class="row mt-3">
+            <i class="far fa-thumbs-up h1 pr-4 text-success" (click)='upVote(quote)'></i>
+            <i class="far fa-thumbs-down h1 text-danger" (click)='downVote(quote)'></i>     
+       </div>
+       <span class="pr-5">{{quote.upvotes}}</span>
+      <span class="pr-5">{{quote.downvotes}}</span>
         </div>
       </div>
       <div class="col-md-6">
@@ -21,6 +29,6 @@
      </div>
       </div>
     </div>
-    <p *ngIf='quotes.length > 5'>You have too many goals</p>
+    <p *ngIf='quotes.length > 5'>You have too many quotes</p>
   </div>
   
