@@ -1,7 +1,13 @@
-# Quotes
+# Quote
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0.
+## Author
+Abigael Seron
 
+## Description
+This is agular cli application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote.
+
+## Github repo link
+https://github.com/seron-ux/Quotes-App.git
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -25,3 +31,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Installation/Setup Instructions
+. Open Terminal {Ctrl+Alt+T}
+.git clone https://github.com/seron-ux/Quotes-App.git
+.cd Quotes-app
+.code . or atom . based on the text editor you have.
+## Technologies Used
+.HTML5
+.CSS
+.[AngulerCLI]
+.markdown
+.Bootstrap
+## Known Bugs
+Cannot indicate the time posted on the quote
+## Contact Information
+If you have any suggestion or question, you can reach me on [abyseronkirui@gmail.com]
+## License
+. MIT License
+.Copyright(c) 2021 Abigael Seron
